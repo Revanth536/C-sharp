@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,9 +10,19 @@ namespace Basics.basics
     {
         public static void Main(string[] args)
         {
-            int n = 10;
-            int i = 20;
-            Console.WriteLine(n + i);
+            //int n = 10;
+            //int i = 20;
+            //Console.WriteLine(n + i);
+
+            //Sum of numbers in range
+            int n = Convert.ToInt32((Console.ReadLine()));
+            int n1=Convert.ToInt32((Console.ReadLine())),sum=0;
+            for(int i = n; i <= n1; i++)
+            {
+                sum += i;
+            }
+            Console.WriteLine(sum);
+
         }
     }
 }
