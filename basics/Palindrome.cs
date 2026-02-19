@@ -11,14 +11,15 @@ namespace Basics.basics
         public static void Main(String[] args)
         {
             int p=Convert.ToInt32( Console.ReadLine() );
-            int t = p, sum = 0;
+            int t = p, rev = 0;
             while (p > 0)
             {
                 int r = p % 10;
-                sum += r;
+                rev = rev*10+r;
                 p /= 10;
             }
-            if (t == sum)
+            //Console.WriteLine(t + " " + rev);
+            if (t == rev)
                 Console.WriteLine("palindrome");
             else
                 Console.WriteLine("Not a Palindrome");
